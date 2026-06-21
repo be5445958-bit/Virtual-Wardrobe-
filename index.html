@@ -387,19 +387,19 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
 .fr-stat-l{font-size:10px;color:var(--mu);line-height:1.4}
 .fr-stat-div{width:1px;background:rgba(255,255,255,.07);flex-shrink:0}
 /* ── AVATAR REDESIGN ── */
-.av-hero{display:grid;grid-template-columns:148px 1fr;gap:0;padding:12px 14px;align-items:start}
-.av-canvas-wrap{position:relative;width:140px}
+.av-hero{display:grid;grid-template-columns:148px 1fr;gap:0;padding:10px 12px;align-items:start}
+.av-canvas-wrap{position:relative;width:150px;margin:0 auto}
 .av-glow{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:120px;height:30px;background:radial-gradient(ellipse,rgba(201,169,110,.25),transparent 70%);pointer-events:none;animation:glowPulse 3s ease-in-out infinite}
 @keyframes glowPulse{0%,100%{opacity:.6}50%{opacity:1}}
 .av-biotype{position:absolute;top:8px;left:8px;background:rgba(8,11,18,.8);backdrop-filter:blur(8px);border:1px solid rgba(201,169,110,.3);padding:3px 8px;border-radius:20px;font-size:9px;font-weight:700;color:var(--g2);letter-spacing:.06em;text-transform:uppercase}
-.av-hero-right{display:flex;flex-direction:column;gap:7px;padding-left:8px;min-width:0;overflow:visible;flex:1}
-.av-measures-card{background:linear-gradient(135deg,rgba(201,169,110,.08),rgba(201,169,110,.03));border:1px solid rgba(201,169,110,.18);border-radius:14px;padding:10px}
-.av-skin-card{background:var(--s2);border:1px solid var(--bd);border-radius:14px;padding:12px}
+.av-hero-right{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.av-measures-card{background:linear-gradient(135deg,rgba(201,169,110,.08),rgba(201,169,110,.03));border:1px solid rgba(201,169,110,.18);border-radius:12px;padding:9px}
+.av-skin-card{background:var(--s2);border:1px solid var(--bd);border-radius:12px;padding:9px}
 .amc-title{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g1);margin-bottom:8px}
-.amc-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
-.amc-item{text-align:center;padding:3px 0}
-.amc-val{font-family:var(--sf);font-size:1rem;font-style:italic;color:var(--g2);display:block;line-height:1}
-.amc-lbl{font-size:8px;color:var(--mu);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.amc-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.amc-item{text-align:center}
+.amc-val{font-family:var(--sf);font-size:1.1rem;font-style:italic;color:var(--g2);display:block;line-height:1}
+.amc-lbl{font-size:9px;color:var(--mu);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
 /* Sliders section */
 .av-sliders-section{padding:0 22px 16px;border-bottom:1px solid var(--bd)}
 .avs-title{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-bottom:12px;padding-top:16px}
@@ -441,8 +441,8 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
 .av-card-ck{position:absolute;top:6px;right:6px;width:20px;height:20px;border-radius:50%;background:var(--g1);color:var(--bg);font-size:10px;font-weight:800;display:none;align-items:center;justify-content:center}
 .av-card.on .av-card-ck{display:flex}
 /* vtrow */
-.vtrow{display:flex;gap:5px;margin-top:10px;width:100%}
-.vt{flex:1;height:32px;border-radius:20px;border:1px solid var(--bd2);background:transparent;color:var(--mu);font-size:10px;font-weight:700;cursor:pointer;font-family:var(--ui);transition:all .2s;letter-spacing:.02em;min-width:0;padding:0 4px}
+.vtrow{display:flex;gap:6px;margin-top:10px}
+.vt{flex:1;height:32px;border-radius:20px;border:1px solid var(--bd2);background:transparent;color:var(--mu);font-size:11px;font-weight:700;cursor:pointer;font-family:var(--ui);transition:all .2s;letter-spacing:.04em}
 .vt.on{background:var(--g1);color:var(--bg);border-color:var(--g1)}
 /* ── UAU CARD ── */
 .uau-card{background:linear-gradient(160deg,#0E1525,#080B12);border:1px solid rgba(201,169,110,.25);border-radius:24px;overflow:hidden;margin-bottom:14px}
@@ -630,7 +630,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
   </div>
   <div class="ustrip">
     <span style="font-size:1.3rem;flex-shrink:0">🧬</span>
-    <div class="ustrip-t"><strong>Exclusivo: 47 pontos corporais mapeados</strong><span id="ustrip-sub">Precisão que nenhum outro app de moda oferece no Brasil</span></div>
+    <div class="ustrip-t"><strong>Análise de proporções corporais com IA</strong><span id="ustrip-sub">Precisão que nenhum outro app de moda oferece no Brasil</span></div>
   </div>
 
   <!-- COMO FUNCIONA - onboarding visual -->
@@ -695,7 +695,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
     <div class="cam-empty" id="cam-empty"><div class="ce-ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg></div><div class="ce-title">Sua foto aqui</div><div class="ce-sub">Use a câmera ao vivo ou envie da galeria</div></div>
     <video id="live-vid" autoplay playsinline muted></video>
     <img id="photo-img" src="" alt="">
-    <canvas id="ov-cv"></canvas>
+    <canvas id="ov-cv" style="display:none"></canvas>
     <div class="cam-bot" id="cam-bot"><div class="cb-name" id="cb-n">Selecione uma peça ↑</div><button class="analyze-btn" onclick="doAnalyze()"><span id="analyze-txt">Analisar</span><span>✦</span></button></div>
     <div class="cam-ctrl" id="cam-ctrl">
       <button class="cc-btn" onclick="flipCam()">🔄</button>
@@ -732,7 +732,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
       <div class="ai-s" id="as0"><span id="as0t">Detectando contorno e proporções corporais</span></div>
       <div class="ai-s" id="as1"><span id="as1t">Mapeando ombros, busto, cintura e quadril</span></div>
       <div class="ai-s" id="as2"><span id="as2t">Calculando caimento ideal da peça</span></div>
-      <div class="ai-s" id="as3"><span id="as3t">Gerando sobreposição fotorrealista</span></div>
+      <div class="ai-s" id="as3"><span id="as3t">Gerando resultado personalizado</span></div>
     </div>
     <div class="ai-privacy">
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path fill="none" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -810,7 +810,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
         <div class="trust-how-steps">
           <div class="ths">
             <div class="ths-n">1</div>
-            <div class="ths-text"><strong id="how1t">Você tira uma foto</strong><span id="how1d"> — a IA detecta 47 pontos no seu corpo: ombros, busto, cintura, quadril, comprimento de torso e pernas.</span></div>
+            <div class="ths-text"><strong id="how1t">Você tira uma foto</strong><span id="how1d"> — a IA analisa suas proporções corporais: busto, cintura, quadril e altura para calcular o caimento real.</span></div>
           </div>
           <div class="ths">
             <div class="ths-n">2</div>
@@ -856,8 +856,8 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
         </div>
         <div class="tstat-div"></div>
         <div class="tstat">
-          <div class="tstat-n">47</div>
-          <div class="tstat-l" id="tstat-l3">pontos corporais analisados no seu corpo</div>
+          <div class="tstat-n">IA</div>
+          <div class="tstat-l" id="tstat-l3">analisa proporções reais do seu corpo</div>
         </div>
       </div>
       <div class="trust-guarantee">
@@ -899,32 +899,27 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
           <div class="amc-item"><span class="amc-val" id="amc-ci">72</span><span class="amc-lbl" id="amc-lbl-ci">cintura</span></div>
           <div class="amc-item"><span class="amc-val" id="amc-qu">96</span><span class="amc-lbl" id="amc-lbl-qu">quadril</span></div>
           <div class="amc-item"><span class="amc-val" id="amc-alt">168</span><span class="amc-lbl" id="amc-lbl-alt">altura</span></div>
-          <div class="amc-item"><span class="amc-val" id="amc-pe">65</span><span class="amc-lbl">peso kg</span></div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- TOM DE PELE + GÊNERO abaixo do hero, em linha -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 14px 14px">
-    <!-- Tom de pele -->
-    <div class="av-skin-card">
-      <div class="amc-title" id="av-tompele">Tom de pele</div>
-      <div class="sk-row" style="margin-top:8px;flex-wrap:wrap;gap:7px">
-        <div class="skd on" style="background:#FDDBB4" onclick="setSk('#FDDBB4',this)"></div>
-        <div class="skd" style="background:#F0C08A" onclick="setSk('#F0C08A',this)"></div>
-        <div class="skd" style="background:#D4905A" onclick="setSk('#D4905A',this)"></div>
-        <div class="skd" style="background:#A06028" onclick="setSk('#A06028',this)"></div>
-        <div class="skd" style="background:#5C300F" onclick="setSk('#5C300F',this)"></div>
+      <!-- Tom de pele -->
+      <div class="av-skin-card">
+        <div class="amc-title" id="av-tompele">Tom de pele</div>
+        <div class="sk-row" style="margin-top:8px">
+          <div class="skd on" style="background:#FDDBB4" onclick="setSk('#FDDBB4',this)"></div>
+          <div class="skd" style="background:#F0C08A" onclick="setSk('#F0C08A',this)"></div>
+          <div class="skd" style="background:#D4905A" onclick="setSk('#D4905A',this)"></div>
+          <div class="skd" style="background:#A06028" onclick="setSk('#A06028',this)"></div>
+          <div class="skd" style="background:#5C300F" onclick="setSk('#5C300F',this)"></div>
+        </div>
       </div>
-    </div>
-    <!-- Gênero -->
-    <div class="av-skin-card">
-      <div class="amc-title" id="av-genero">Gênero</div>
-      <div class="opills" style="margin-top:8px;flex-direction:column;gap:6px">
-        <div class="opill on" onclick="setGen('fem',this)" id="gen-fem">Fem</div>
-        <div class="opill" onclick="setGen('masc',this)" id="gen-masc">Masc</div>
-        <div class="opill" onclick="setGen('neu',this)" id="gen-neu">Neutro</div>
+      <!-- Gênero -->
+      <div class="av-skin-card">
+        <div class="amc-title" id="av-genero">Gênero</div>
+        <div class="opills" style="margin-top:8px">
+          <div class="opill on" onclick="setGen('fem',this)" id="gen-fem">Fem</div>
+          <div class="opill" onclick="setGen('masc',this)" id="gen-masc">Masc</div>
+          <div class="opill" onclick="setGen('neu',this)" id="gen-neu">Neutro</div>
+        </div>
       </div>
     </div>
   </div>
@@ -939,6 +934,14 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
         <div style="display:flex;align-items:center;gap:6px;margin-top:6px">
           <input type="number" id="alt-input" value="168" min="145" max="210" style="width:64px;background:var(--s2);border:1px solid var(--bd2);border-radius:8px;padding:5px 8px;font-size:13px;font-weight:700;color:var(--g2);text-align:center;font-family:var(--ui)" oninput="const v=Math.min(210,Math.max(145,parseInt(this.value)||168));document.getElementById('alt-range').value=v;upM('alt',v,'cm');updateAMC()">
           <span style="font-size:11px;color:var(--mu)">cm</span>
+        </div>
+      </div>
+      <div class="avs-item">
+        <div class="avs-row"><span class="avs-lbl" id="sl-pes">Peso</span><span class="avs-val" id="mv-pes">65 kg</span></div>
+        <input type="range" class="avs-range" min="40" max="160" value="65" oninput="upM('pes',this.value,'kg');updateAMC()">
+        <div style="display:flex;align-items:center;gap:6px;margin-top:6px">
+          <input type="number" id="pes-input" value="65" min="40" max="160" style="width:56px;background:var(--s2);border:1px solid var(--bd2);border-radius:8px;padding:5px 8px;font-size:13px;font-weight:700;color:var(--g2);text-align:center;font-family:var(--ui)" oninput="const v=Math.min(160,Math.max(40,parseInt(this.value)||65));document.querySelector('[oninput*=pes]').value=v;upM('pes',v,'kg');updateAMC()">
+          <span style="font-size:11px;color:var(--mu)">kg</span>
         </div>
       </div>
       <div class="avs-item">
@@ -962,12 +965,8 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
         <input type="range" class="avs-range" min="35" max="90" value="56" oninput="upM('co',this.value,'cm');drawAv()">
       </div>
       <div class="avs-item">
-        <div class="avs-row"><span class="avs-lbl" id="sl-pe">⚖️ Peso</span><span class="avs-val" id="mv-pe">65 kg</span></div>
-        <input type="range" class="avs-range" min="35" max="180" value="65" id="pe-range" oninput="upM('pes',this.value,'kg');document.getElementById('pe-input').value=this.value">
-        <div style="display:flex;align-items:center;gap:6px;margin-top:6px">
-          <input type="number" id="pe-input" value="65" min="35" max="180" style="width:64px;background:var(--s2);border:1px solid var(--bd2);border-radius:8px;padding:5px 8px;font-size:13px;font-weight:700;color:var(--g2);text-align:center;font-family:var(--ui)" oninput="const v=Math.min(180,Math.max(35,parseInt(this.value)||65));document.getElementById('pe-range').value=v;upM('pes',v,'kg')">
-          <span style="font-size:11px;color:var(--mu)">kg</span>
-        </div>
+        <div class="avs-row"><span class="avs-lbl" id="sl-pes">Peso</span><span class="avs-val" id="mv-pes">65 kg</span></div>
+        <input type="range" class="avs-range" min="40" max="160" value="65" oninput="upM('pes',this.value,'kg')">
       </div>
     </div>
   </div>
@@ -1006,7 +1005,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
     <!-- Placeholder quando nenhuma peça selecionada -->
     <div class="av-empty-sel" id="av-empty-sel">
       <div style="font-size:2rem;margin-bottom:8px">👗</div>
-      <div style="font-size:13px;color:var(--mu)"><span id="av-empty-txt">Escolha uma peça abaixo para ver como fica no seu avatar</span></div>
+      <div style="font-size:13px;color:var(--mu)"><span id="av-empty-txt"><span id="av-empty-txt">Escolha uma peça abaixo para ver como fica no seu avatar</span></span></div>
     </div>
 
     <!-- Fit bars do avatar -->
@@ -1046,16 +1045,16 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
     <div class="dhero">
       <div class="dh-eye"><div class="dh-dot"></div><span id="disc-excl">Tecnologia exclusiva</span></div>
       <div class="dh-t"><span id="disc-h">Moda que</span><br><em id="disc-em">se encaixa em você</em></div>
-      <div class="dh-s" id="disc-sub">IA mapeia 47 pontos do seu corpo e mostra como cada peça cai — antes de qualquer compra, com precisão real.</div>
+      <div class="dh-s" id="disc-sub">IA analisa suas proporções corporais e mostra como cada peça vai cair no seu corpo — antes de qualquer compra.</div>
       <div class="dstats">
         <div class="dstat"><div class="dsn">95%</div><div class="dsl" id="dsl-1">Menos devoluções</div></div>
-        <div class="dstat"><div class="dsn">47pts</div><div class="dsl" id="dsl-2">Mapeados no corpo</div></div>
+        <div class="dstat"><div class="dsn">IA</div><div class="dsl" id="dsl-2">Proporções analisadas</div></div>
         <div class="dstat"><div class="dsn">&lt;3s</div><div class="dsl" id="dsl-3">Para analisar</div></div>
       </div>
     </div>
     <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);padding:0 0 12px" id="disc-only">O que só o Virtual Wardrobe tem</div>
     <div class="diff-list">
-      <div class="diff"><div class="diff-ico di-g">🧬</div><div><div class="diff-t" id="diff-1t">47 pontos corporais mapeados</div><div class="diff-d" id="diff-1d">Nossa IA detecta ombros, busto, cintura, quadril, coxa e joelho. Concorrentes mapeiam no máximo 12.</div><span class="diff-tag" id="diff-1tag">Exclusivo VW</span></div></div>
+      <div class="diff"><div class="diff-ico di-g">🧬</div><div><div class="diff-t" id="diff-1t">Análise de proporções com IA</div><div class="diff-d" id="diff-1d">Nossa IA analisa suas proporções reais — busto, cintura, quadril, altura — e calcula o caimento de cada peça no seu corpo.</div><span class="diff-tag" id="diff-1tag">Exclusivo VW</span></div></div>
       <div class="diff"><div class="diff-ico di-b">📷</div><div><div class="diff-t" id="diff-2t">Câmera ao vivo com guia AR</div><div class="diff-d" id="diff-2d">Silhueta guia + instruções animadas. Você nunca tira uma foto errada.</div><span class="diff-tag" id="diff-2tag">Patenteado</span></div></div>
       <div class="diff"><div class="diff-ico di-ok">🎨</div><div><div class="diff-t" id="diff-3t">Simulação de textura real</div><div class="diff-d" id="diff-3d">A roupa aparece com gradiente, dobras e caimento simulados por tipo de tecido.</div><span class="diff-tag" id="diff-3tag">Motor VW v5</span></div></div>
       <div class="diff"><div class="diff-ico di-p">🤖</div><div><div class="diff-t" id="diff-4t">Dica exclusiva por IA generativa</div><div class="diff-d" id="diff-4d">Claude Sonnet 4 analisa seu corpo e gera uma dica única. Nenhum outro app faz isso.</div><span class="diff-tag">Claude AI</span></div></div>
@@ -1063,7 +1062,7 @@ input[type=range]::-webkit-slider-thumb{appearance:none;width:20px;height:20px;b
     <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);padding:6px 0 12px" id="disc-how">Como funciona</div>
     <div class="how-grid">
       <div class="how"><div class="how-n">01</div><div class="how-i">📸</div><div class="how-t" id="how-1t">Tire ou envie a foto</div><div class="how-d" id="how-1d">Câmera ao vivo com guia AR ou importe da galeria.</div></div>
-      <div class="how"><div class="how-n">02</div><div class="how-i">🧠</div><div class="how-t" id="how-2t">IA mapeia o corpo</div><div class="how-d" id="how-2d">47 pontos detectados e proporções calculadas em 3 segundos.</div></div>
+      <div class="how"><div class="how-n">02</div><div class="how-i">🧠</div><div class="how-t" id="how-2t">IA analisa proporções</div><div class="how-d" id="how-2d">Proporções corporais calculadas em segundos pela IA.</div></div>
       <div class="how"><div class="how-n">03</div><div class="how-i">👗</div><div class="how-t" id="how-3t">Veja o caimento real</div><div class="how-d" id="how-3d">Peça sobreposta com física de tecido e pins de análise.</div></div>
       <div class="how"><div class="how-n">04</div><div class="how-i">✓</div><div class="how-t" id="how-4t">Compre com certeza</div><div class="how-d" id="how-4d">Tamanho exato + dica exclusiva. Zero surpresa.</div></div>
     </div>
@@ -1287,38 +1286,34 @@ function filterAvCat(cat,el){
     </div>`).join('');
 }
 
-function renderAG(){filterAvCat('all',document.querySelector('.av-cat-pills .cpill'));}
+function renderAG(){
+  const firstPill=document.querySelector('.av-cat-pills .cpill');
+  if(firstPill)filterAvCat('all',firstPill);
+  else{
+    // Avatar tab not visible yet, just populate the grid
+    const g=document.getElementById('av-g');
+    if(g)g.innerHTML=GS.map(g=>`
+      <div class="av-card ${ST.aG?.id===g.id?'on':''}" onclick="selAG('${g.id}',this)">
+        <img src="${g.img}" loading="lazy" onerror="this.style.background='#1E1820';this.style.height='110px'">
+        <div class="av-card-info">
+          <div class="av-card-name">${g.name}</div>
+          <div class="av-card-price">${g.price}</div>
+        </div>
+        <div class="av-card-ck">✓</div>
+      </div>`).join('');
+  }
+}
 
 function updateAMC(){
   const m=ST.m;
   const s=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   s('amc-bu',m.bu);s('amc-ci',m.ci);s('amc-qu',m.qu);s('amc-alt',m.alt);
-  // Mostrar peso se disponível
-  const peEl=document.getElementById('amc-pe');
-  if(peEl)peEl.textContent=m.pes||65;
-  updateIMC();
   // Update biotype badge
   const diff=m.bu-m.ci;
   const btKey=diff>=20?'bio-hourglass':diff>=14?'bio-curvy':diff>=8?'bio-prop':'bio-athletic';
   const bt=GL(btKey);
   const badge=document.getElementById('av-biotype');
   if(badge)badge.textContent=bt;
-}
-
-function updateIMC(){
-  const m=ST.m;
-  const altM=(m.alt||168)/100;
-  const peso=m.pes||65;
-  const imc=peso/(altM*altM);
-  const imcEl=document.getElementById('imc-badge');
-  if(!imcEl)return;
-  let label,color,bg;
-  if(imc<18.5){label='Abaixo do peso';color='#60A5FA';bg='rgba(96,165,250,.12)';}
-  else if(imc<25){label='Peso ideal ✓';color='#4ADE80';bg='rgba(34,168,90,.12)';}
-  else if(imc<30){label='Sobrepeso';color='#E2C98A';bg='rgba(224,120,32,.12)';}
-  else{label='Obesidade';color='#F87171';bg='rgba(224,56,56,.12)';}
-  imcEl.textContent=`IMC ${imc.toFixed(1)} · ${label}`;
-  imcEl.style.color=color;imcEl.style.background=bg;imcEl.style.borderColor=color.replace(')',',0.3)').replace('rgb','rgba');
 }
 
 function filterCat(cat,el){
@@ -1330,18 +1325,8 @@ function goTab(id,el){
   document.querySelectorAll(".tab").forEach(t=>t.classList.remove("on"));
   if(el)el.classList.add("on");
   document.querySelectorAll(".scr").forEach(s=>s.classList.remove("on"));
-  document.getElementById("s-"+id).classList.add("on");
+  const scr=document.getElementById("s-"+id);if(scr)scr.classList.add("on");
 }
-
-function setBNav(id){
-  document.querySelectorAll(".bni").forEach(b=>b.classList.remove("on"));
-  document.getElementById("bn-"+id).classList.add("on");
-  const tabs=document.querySelectorAll(".tab");
-  const idx=["photo","avatar","discover"].indexOf(id);
-  goTab(id,tabs[idx]);
-}
-
-
 
 function drawAvIcon(color){
   const cv=document.getElementById('av-icon');
@@ -1360,13 +1345,16 @@ function drawAvIcon(color){
 }
 
 function updateAvIcon(){
-  const isOn=document.getElementById('bn-avatar').classList.contains('on');
+  const el=document.getElementById('bn-avatar');
+  const isOn=el?el.classList.contains('on'):false;
   drawAvIcon(isOn?'#C9A96E':'rgba(245,240,234,.38)');
 }
 
 function setBNav(id){
   document.querySelectorAll(".bni").forEach(b=>b.classList.remove("on"));
-  document.getElementById("bn-"+id).classList.add("on");
+  const idMap={photo:"bn-photo",avatar:"bn-avatar",discover:"bn-disc"};
+  const btnEl=document.getElementById(idMap[id]||"bn-"+id);
+  if(btnEl)btnEl.classList.add("on");
   const tabs=document.querySelectorAll(".tab");
   const idx=["photo","avatar","discover"].indexOf(id);
   goTab(id,tabs[idx]);
@@ -1492,7 +1480,7 @@ function resetPh(){
 function setStep(n){
   [1,2,3,4].forEach(i=>{
     const c=document.getElementById("sn"+i),l=document.getElementById("sl"+i),lb=document.getElementById("slb"+i);
-    if(c)c.className="sn"+(i<n?" d":i===n?" a":"");
+    c.className="sn"+(i<n?" d":i===n?" a":"");
     if(l)l.className="sline"+(i<n?" d":"");
     if(lb)lb.className=i===n?"a":"";
   });
@@ -1519,7 +1507,7 @@ async function doAnalyze(){
           {type:"image",source:{type:"base64",media_type:mime,data:b64}},
           {type:"text",text:`Analise a imagem e retorne SOMENTE JSON sem markdown:
 {"bodyDetected":true,"topPct":n,"bottomPct":n,"shoulderWidthPct":n,"bustWidthPct":n,"waistWidthPct":n,"hipWidthPct":n,"neckYPct":n,"chestYPct":n,"waistYPct":n,"hipYPct":n,"kneeYPct":n,"centerXPct":n,"estBust":n,"estWaist":n,"estHips":n,"recommendedSize":"PP"|"P"|"M"|"G"|"GG","confidencePct":n,"fitAnalysis":{"shoulders":"perfect"|"ok"|"tight","bust":"perfect"|"ok"|"tight","waist":"perfect"|"ok"|"tight","hips":"perfect"|"ok"|"tight","length":"perfect"|"ok"|"short"},"fitScore":n,"fitVerdict":"título curto impactante ex: Caimento Perfeito / Vai Valorizar Muito / Pequeno Ajuste","fitVerdictSub":"subtítulo 1 linha ex: Suas proporções são ideais para este corte","fitBars":[{"label":"Ombros","pct":n,"status":"perfect"|"ok"|"tight"},{"label":"Busto","pct":n,"status":"perfect"|"ok"|"tight"},{"label":"Cintura","pct":n,"status":"perfect"|"ok"|"tight"},{"label":"Quadril","pct":n,"status":"perfect"|"ok"|"tight"},{"label":"Comprimento","pct":n,"status":"perfect"|"ok"|"tight"}],"fitInsight":"análise personalizada detalhada 2-3 frases explicando EXATAMENTE como esta peça específica vai cair neste corpo específico, mencionando as medidas reais (busto ${ST.m.bu}cm, cintura ${ST.m.ci}cm, quadril ${ST.m.qu}cm, altura ${ST.m.alt}cm) e o que isso significa pro caimento da peça ${ST.pG.name}","fitTags":[{"text":"tag positiva ex: Valoriza quadril","type":"good"},{"text":"tag positiva 2","type":"good"},{"text":"tag dica ex: Prefira tamanho M","type":"tip"}]}
-Peça: ${ST.pG.name} shape:${ST.pG.shape} categoria:${ST.pG.cat}. Medidas do avatar: busto ${ST.m.bu}cm, cintura ${ST.m.ci}cm, quadril ${ST.m.qu}cm, altura ${ST.m.alt}cm, ombros ${ST.m.om}cm, peso ${ST.m.pes||65}kg (IMC ${((ST.m.pes||65)/((ST.m.alt||168)/100)**2).toFixed(1)}). Idioma da resposta: ${document.getElementById('lang-code')?.textContent||'PT'}. Se possível, estime a altura da pessoa na foto em cm e inclua como "estimatedHeight":n no JSON. Use o peso e IMC para personalizar ainda mais a análise de caimento e recomendação de tamanho. Se sem pessoa visível, use as medidas do avatar para calcular. Seja específico e personalizado, não genérico.`}
+Peça: ${ST.pG.name} shape:${ST.pG.shape} categoria:${ST.pG.cat}. Medidas do avatar: busto ${ST.m.bu}cm, cintura ${ST.m.ci}cm, quadril ${ST.m.qu}cm, altura ${ST.m.alt}cm, ombros ${ST.m.om}cm. Idioma da resposta: ${document.getElementById('lang-code')?.textContent||'PT'}. Se possível, estime a altura da pessoa na foto em cm e inclua como "estimatedHeight":n no JSON. Se sem pessoa visível, use as medidas do avatar para calcular. Seja específico e personalizado, não genérico.`}
         ]}]
       })
     });
@@ -1602,7 +1590,7 @@ function fallback(){
     fitInsight:insight,fitTags:tags};
 }
 
-async function drawOverlay(bd){
+async function drawOverlay(bd){ return;
   const img=document.getElementById("photo-img");
   await new Promise(r=>{if(img.complete&&img.naturalWidth)r();else{img.onload=r;img.onerror=r;}});
   const wrap=document.getElementById("cam"),cv=document.getElementById("ov-cv");
@@ -1619,7 +1607,7 @@ async function drawOverlay(bd){
   if(g.shape==="shirt"||g.shape==="blazer"||g.shape==="crop"){
     const hmY=g.shape==="crop"?chY+(wY-chY)*.83:g.shape==="blazer"?hY-(hY-wY)*.28:wY+(hY-wY)*.2;
     const slE=g.shape==="crop"?wY-20:wY+(hY-wY)*.3;
-    ctx.beginPath();ctx.moveTo(cx-8,nY+4);ctx.quadraticCurveTo(cx,nY-2,cx+8,nY+4);ctx.lineTo(cx+sW+13,chY-8);ctx.lineTo(cx+sW+28,slE);ctx.lineTo(cx+sW+13,slE+7);ctx.bezierCurveTo(cx+bW+5,chY+14,cx+wW+3,wY-6,cx+wW+2,wY);ctx.bezierCurveTo(cx+wW+2,wY+8,cx+hW*.93+2,hmY-7,cx+hW*.91,hmY);ctx.lineTo(cx-hW*.91,hmY);ctx.bezierCurveTo(cx-hW*.93-2,hmY-7,cx-wW-2,wY+8,cx-wW-2,wY);ctx.bezierCurveTo(cx-wW-3,wY-6,cx-bW-5,chY+14,cx-sW-13,slE+7);ctx.lineTo(cx-sW-28,slE);ctx.lineTo(cx-sW-13,chY-8);ctx.closePath();
+    ctx.beginPath();ctx.moveTo(cx-6,nY+4);ctx.quadraticCurveTo(cx,nY-2,cx+6,nY+4);ctx.lineTo(cx+sW+4,chY-4);ctx.lineTo(cx+sW+10,slE);ctx.lineTo(cx+sW+4,slE+5);ctx.bezierCurveTo(cx+bW+3,chY+12,cx+wW+2,wY-4,cx+wW+2,wY);ctx.bezierCurveTo(cx+wW+2,wY+8,cx+hW*.93+2,hmY-7,cx+hW*.91,hmY);ctx.lineTo(cx-hW*.91,hmY);ctx.bezierCurveTo(cx-hW*.93-2,hmY-7,cx-wW-2,wY+8,cx-wW-2,wY);ctx.bezierCurveTo(cx-wW-3,wY-6,cx-bW-5,chY+14,cx-sW-4,slE+5);ctx.lineTo(cx-sW-10,slE);ctx.lineTo(cx-sW-4,chY-4);ctx.closePath();
     ctx.fillStyle=grd(cx-sW,nY,cx+sW,hmY);ctx.fill();stk();
     ctx.strokeStyle=`rgba(${Math.max(0,cr-16)},${Math.max(0,cg-16)},${Math.max(0,cb-16)},.14)`;ctx.lineWidth=.8;
     ctx.beginPath();ctx.moveTo(cx+wW,wY);ctx.lineTo(cx+sW,chY);ctx.stroke();
@@ -1870,7 +1858,7 @@ var LANGS={
   pt:{
     'hero-lbl':'Provador Inteligente','hero-h':'Veja como fica','hero-em':'antes de comprar',
     'hero-sub':'A única tecnologia que analisa o caimento real no seu corpo. Não em um manequim genérico.',
-    'ustrip-str':'Exclusivo: 47 pontos corporais mapeados','ustrip-sub':'Precisão que nenhum outro app de moda oferece no Brasil',
+    'ustrip-str':'Análise de proporções corporais com IA','ustrip-sub':'Precisão que nenhum outro app de moda oferece no Brasil',
     'onb1':'Escolha a peça','onb2':'Tire sua foto','onb3':'Veja o resultado',
     'slb1':'Peça','slb2':'Foto','slb3':'Análise','slb4':'Resultado',
     'sh-t':'① Escolha uma peça','cat-lbl':'peças',
@@ -1892,7 +1880,7 @@ var LANGS={
     'as0t':'Detectando contorno e proporções corporais',
     'as1t':'Mapeando ombros, busto, cintura e quadril',
     'as2t':'Calculando caimento ideal da peça',
-    'as3t':'Gerando sobreposição fotorrealista',
+    'as3t':'Gerando resultado personalizado',
     'rc1':'Comparar tamanhos','rc2':'Caimento personalizado','rc3':'Composição & cuidados',
     'sz-tag':'Tamanho ideal para você','fit-lbl':'✦ Análise personalizada',
     'hook-txt':'Nunca mais erre o tamanho comprando online',
@@ -1930,7 +1918,7 @@ var LANGS={
     'how2t':'Calculamos as proporções reais',
     'how3t':'Cruzamos com a peça escolhida',
     'how4t':'Você recebe um resultado único',
-    'how1d':' — a IA detecta 47 pontos no seu corpo: ombros, busto, cintura, quadril, comprimento de torso e pernas.',
+    'how1d':' — a IA analisa suas proporções corporais: busto, cintura, quadril e altura para calcular o caimento real.',
     'how2d':' — não estimativas. Medimos pixel a pixel a distância entre cada ponto do seu corpo.',
     'how3d':' — cada roupa tem um corte específico. A IA calcula se o corte abraça ou contraria suas proporções.',
     'how4d':' — que não serve pra mais ninguém. É calculado exclusivamente para o seu corpo.',
@@ -1978,6 +1966,8 @@ var LANGS={
     'bio-prop':'PROPORCIONAL',
     'bio-athletic':'ATLÉTICO',
     'sl-alt':'Altura',
+    'sl-pes':'Peso',
+    'sl-pes':'Peso',
     'sl-bu':'Busto',
     'sl-ci':'Cintura',
     'sl-qu':'Quadril',
@@ -1987,13 +1977,13 @@ var LANGS={
     'disc-excl':'Tecnologia exclusiva',
     'disc-h':'Moda que',
     'disc-em':'se encaixa em você',
-    'disc-sub':'IA mapeia 47 pontos do seu corpo e mostra como cada peça cai — antes de qualquer compra, com precisão real.',
+    'disc-sub':'IA analisa suas proporções corporais e mostra como cada peça vai cair no seu corpo — antes de qualquer compra.',
     'dsl-1':'Menos devoluções',
-    'dsl-2':'Mapeados no corpo',
+    'dsl-2':'Proporções analisadas',
     'dsl-3':'Para analisar',
     'disc-only':'O que só o Virtual Wardrobe tem',
-    'diff-1t':'47 pontos corporais mapeados',
-    'diff-1d':'Nossa IA detecta ombros, busto, cintura, quadril, coxa e joelho. Concorrentes mapeiam no máximo 12.',
+    'diff-1t':'Análise de proporções com IA',
+    'diff-1d':'Nossa IA analisa suas proporções reais — busto, cintura, quadril, altura — e calcula o caimento de cada peça no seu corpo.',
     'diff-1tag':'Exclusivo VW',
     'diff-2t':'Câmera ao vivo com guia AR',
     'diff-2d':'Silhueta guia + instruções animadas. Você nunca tira uma foto errada.',
@@ -2006,8 +1996,8 @@ var LANGS={
     'disc-how':'Como funciona',
     'how-1t':'Tire ou envie a foto',
     'how-1d':'Câmera ao vivo com guia AR ou importe da galeria.',
-    'how-2t':'IA mapeia o corpo',
-    'how-2d':'47 pontos detectados e proporções calculadas em 3 segundos.',
+    'how-2t':'IA analisa proporções',
+    'how-2d':'Proporções corporais calculadas em segundos pela IA.',
     'how-3t':'Veja o caimento real',
     'how-3d':'Peça sobreposta com física de tecido e pins de análise.',
     'how-4t':'Compre com certeza',
@@ -2061,14 +2051,14 @@ var LANGS={
     'disc-excl':'Tecnologia exclusiva',
     'disc-h':'Moda que',
     'disc-em':'se encaixa em você',
-    'disc-sub':'IA mapeia 47 pontos do seu corpo e mostra como cada peça cai — antes de qualquer compra, com precisão real.',
+    'disc-sub':'IA analisa suas proporções corporais e mostra como cada peça vai cair no seu corpo — antes de qualquer compra.',
     'dsl-1':'Menos devoluções',
-    'dsl-2':'Mapeados no corpo',
+    'dsl-2':'Proporções analisadas',
     'dsl-3':'Para analisar',
     'disc-only':'O que só o Virtual Wardrobe tem',
     'disc-how':'Como funciona',
-    'diff-1t':'47 pontos corporais mapeados',
-    'diff-1d':'Nossa IA detecta ombros, busto, cintura, quadril, coxa e joelho. Concorrentes mapeiam no máximo 12.',
+    'diff-1t':'Análise de proporções com IA',
+    'diff-1d':'Nossa IA analisa suas proporções reais — busto, cintura, quadril, altura — e calcula o caimento de cada peça no seu corpo.',
     'diff-1tag':'Exclusivo VW',
     'diff-2t':'Câmera ao vivo com guia AR',
     'diff-2d':'Silhueta guia + instruções animadas. Você nunca tira uma foto errada.',
@@ -2080,8 +2070,8 @@ var LANGS={
     'diff-4d':'Claude Sonnet 4 analisa seu corpo e gera uma dica única. Nenhum outro app faz isso.',
     'how-1t':'Tire ou envie a foto',
     'how-1d':'Câmera ao vivo com guia AR ou importe da galeria.',
-    'how-2t':'IA mapeia o corpo',
-    'how-2d':'47 pontos detectados e proporções calculadas em 3 segundos.',
+    'how-2t':'IA analisa proporções',
+    'how-2d':'Proporções corporais calculadas em segundos pela IA.',
     'how-3t':'Veja o caimento real',
     'how-3d':'Peça sobreposta com física de tecido e pins de análise.',
     'how-4t':'Compre com certeza',
@@ -2149,7 +2139,7 @@ var LANGS={
   en:{
     'hero-lbl':'Smart Fitting Room','hero-h':'See how it fits','hero-em':'before you buy',
     'hero-sub':'The only technology that analyzes real fit on your body. Not on a generic mannequin.',
-    'ustrip-str':'Exclusive: 47 body points mapped','ustrip-sub':'Precision no other fashion app offers',
+    'ustrip-str':'AI body proportion analysis','ustrip-sub':'Personalized fit analysis for your body',
     'onb1':'Choose item','onb2':'Take photo','onb3':'See result',
     'slb1':'Item','slb2':'Photo','slb3':'Analysis','slb4':'Result',
     'sh-t':'① Choose an item','cat-lbl':'items',
@@ -2171,7 +2161,7 @@ var LANGS={
     'as0t':'Detecting body contour and proportions',
     'as1t':'Mapping shoulders, bust, waist and hips',
     'as2t':'Calculating ideal garment fit',
-    'as3t':'Generating photorealistic overlay',
+    'as3t':'Generating personalized result',
     'rc1':'Compare sizes','rc2':'Personalized fit','rc3':'Composition & care',
     'sz-tag':'Your ideal size','fit-lbl':'✦ Personalized analysis',
     'hook-txt':'Never get the wrong size shopping online again',
@@ -2209,7 +2199,7 @@ var LANGS={
     'how2t':'We calculate real proportions',
     'how3t':'We cross with the chosen item',
     'how4t':'You get a unique result',
-    'how1d':' — AI detects 47 points on your body: shoulders, bust, waist, hips, torso and leg length.',
+    'how1d':' — AI analyzes your body proportions: bust, waist, hips and height to calculate real fit.',
     'how2d':' — not estimates. We measure pixel by pixel the distance between each body point.',
     'how3d':' — each garment has a specific cut. AI calculates if the cut embraces or contradicts your proportions.',
     'how4d':' — which works for no one else. Calculated exclusively for your body.',
@@ -2257,6 +2247,8 @@ var LANGS={
     'bio-prop':'BALANCED',
     'bio-athletic':'ATHLETIC',
     'sl-alt':'Height',
+    'sl-pes':'Weight',
+    'sl-pes':'Weight',
     'sl-bu':'Bust',
     'sl-ci':'Waist',
     'sl-qu':'Hips',
@@ -2266,12 +2258,12 @@ var LANGS={
     'disc-excl':'Exclusive technology',
     'disc-h':'Fashion that',
     'disc-em':'fits you perfectly',
-    'disc-sub':'AI maps 47 points on your body and shows how each garment fits — before any purchase, with real precision.',
+    'disc-sub':'AI analyzes your body proportions and shows how each garment will fit you — before any purchase.',
     'dsl-1':'Fewer returns',
     'dsl-2':'Body points mapped',
     'dsl-3':'To analyze',
     'disc-only':'What only Virtual Wardrobe has',
-    'diff-1t':'47 body points mapped',
+    'diff-1t':'AI proportion analysis',
     'diff-1d':'Our AI detects shoulders, bust, waist, hips, thigh and knee. Competitors map at most 12.',
     'diff-1tag':'VW Exclusive',
     'diff-2t':'Live camera with AR guide',
@@ -2286,7 +2278,7 @@ var LANGS={
     'how-1t':'Take or upload photo',
     'how-1d':'Live camera with AR guide or import from gallery.',
     'how-2t':'AI maps your body',
-    'how-2d':'47 points detected and proportions calculated in 3 seconds.',
+    'how-2d':'Body proportions calculated in seconds by AI.',
     'how-3t':'See the real fit',
     'how-3d':'Garment overlaid with fabric physics and analysis pins.',
     'how-4t':'Buy with certainty',
@@ -2340,13 +2332,13 @@ var LANGS={
     'disc-excl':'Exclusive technology',
     'disc-h':'Fashion that',
     'disc-em':'fits you perfectly',
-    'disc-sub':'AI maps 47 points on your body and shows how each garment fits — before any purchase.',
+    'disc-sub':'AI analyzes your body proportions and shows how each garment will fit — before any purchase.',
     'dsl-1':'Fewer returns',
     'dsl-2':'Body points mapped',
     'dsl-3':'To analyze',
     'disc-only':'What only Virtual Wardrobe has',
     'disc-how':'How it works',
-    'diff-1t':'47 body points mapped',
+    'diff-1t':'AI proportion analysis',
     'diff-1d':'Our AI detects shoulders, bust, waist, hips, thigh and knee. Competitors map at most 12.',
     'diff-1tag':'VW Exclusive',
     'diff-2t':'Live camera with AR guide',
@@ -2360,7 +2352,7 @@ var LANGS={
     'how-1t':'Take or upload a photo',
     'how-1d':'Live camera with AR guide or import from gallery.',
     'how-2t':'AI maps your body',
-    'how-2d':'47 points detected and proportions calculated in 3 seconds.',
+    'how-2d':'Body proportions calculated in seconds by AI.',
     'how-3t':'See the real fit',
     'how-3d':'Garment overlaid with fabric physics and analysis pins.',
     'how-4t':'Buy with confidence',
@@ -2428,7 +2420,7 @@ var LANGS={
   es:{
     'hero-lbl':'Probador Inteligente','hero-h':'Mira cómo queda','hero-em':'antes de comprar',
     'hero-sub':'La única tecnología que analiza el caído real en tu cuerpo. No en un maniquí genérico.',
-    'ustrip-str':'Exclusivo: 47 puntos corporales mapeados','ustrip-sub':'Precisión que ninguna otra app de moda ofrece',
+    'ustrip-str':'Exclusivo: Análisis de proporciones con IA','ustrip-sub':'Precisión que ninguna otra app de moda ofrece',
     'onb1':'Elige la prenda','onb2':'Toma tu foto','onb3':'Ve el resultado',
     'slb1':'Prenda','slb2':'Foto','slb3':'Análisis','slb4':'Resultado',
     'sh-t':'① Elige una prenda','cat-lbl':'prendas',
@@ -2450,7 +2442,7 @@ var LANGS={
     'as0t':'Detectando contorno y proporciones corporales',
     'as1t':'Mapeando hombros, busto, cintura y caderas',
     'as2t':'Calculando caída ideal de la prenda',
-    'as3t':'Generando superposición fotorrealista',
+    'as3t':'Generando resultado personalizado',
     'rc1':'Comparar tallas','rc2':'Caída personalizada','rc3':'Composición & cuidados',
     'sz-tag':'Tu talla ideal','fit-lbl':'✦ Análisis personalizado',
     'hook-txt':'Nunca más te equivoques de talla comprando online',
@@ -2488,7 +2480,7 @@ var LANGS={
     'how2t':'Calculamos las proporciones reales',
     'how3t':'Cruzamos con la prenda elegida',
     'how4t':'Recibes un resultado único',
-    'how1d':' — la IA detecta 47 puntos en tu cuerpo: hombros, busto, cintura, caderas, longitud de torso y piernas.',
+    'how1d':' — la IA analiza tus proporciones corporales: busto, cintura, caderas y altura para calcular la caída real.',
     'how2d':' — no estimaciones. Medimos píxel a píxel la distancia entre cada punto corporal.',
     'how3d':' — cada prenda tiene un corte específico. La IA calcula si el corte abraza o contradice tus proporciones.',
     'how4d':' — que no sirve para nadie más. Calculado exclusivamente para tu cuerpo.',
@@ -2536,6 +2528,8 @@ var LANGS={
     'bio-prop':'PROPORCIONAL',
     'bio-athletic':'ATLÉTICO',
     'sl-alt':'Altura',
+    'sl-pes':'Peso',
+    'sl-pes':'Peso',
     'sl-bu':'Busto',
     'sl-ci':'Cintura',
     'sl-qu':'Cadera',
@@ -2545,12 +2539,12 @@ var LANGS={
     'disc-excl':'Tecnología exclusiva',
     'disc-h':'Moda que',
     'disc-em':'se adapta a ti',
-    'disc-sub':'La IA mapea 47 puntos de tu cuerpo y muestra cómo queda cada prenda — antes de comprar.',
+    'disc-sub':'La IA analiza tus proporciones corporales y muestra cómo quedará cada prenda — antes de comprar.',
     'dsl-1':'Menos devoluciones',
     'dsl-2':'Puntos mapeados',
     'dsl-3':'Para analizar',
     'disc-only':'Lo que solo Virtual Wardrobe tiene',
-    'diff-1t':'47 puntos corporales mapeados',
+    'diff-1t':'Análisis de proporciones con IA',
     'diff-1d':'Nuestra IA detecta hombros, busto, cintura, cadera, muslo y rodilla. Los competidores mapean máximo 12.',
     'diff-1tag':'Exclusivo VW',
     'diff-2t':'Cámara en vivo con guía AR',
@@ -2565,7 +2559,7 @@ var LANGS={
     'how-1t':'Toma o sube la foto',
     'how-1d':'Cámara en vivo con guía AR o importa desde galería.',
     'how-2t':'La IA mapea tu cuerpo',
-    'how-2d':'47 puntos detectados y proporciones calculadas en 3 segundos.',
+    'how-2d':'Proporciones corporales calculadas en segundos por la IA.',
     'how-3t':'Ve la caída real',
     'how-3d':'Prenda superpuesta con física de tela y pins de análisis.',
     'how-4t':'Compra con certeza',
@@ -2619,13 +2613,13 @@ var LANGS={
     'disc-excl':'Tecnología exclusiva',
     'disc-h':'Moda que',
     'disc-em':'se adapta a ti',
-    'disc-sub':'La IA mapea 47 puntos de tu cuerpo y muestra cómo queda cada prenda — antes de comprar.',
+    'disc-sub':'La IA analiza tus proporciones corporales y muestra cómo quedará cada prenda — antes de comprar.',
     'dsl-1':'Menos devoluciones',
     'dsl-2':'Puntos corporales',
     'dsl-3':'Para analizar',
     'disc-only':'Lo que solo Virtual Wardrobe tiene',
     'disc-how':'Cómo funciona',
-    'diff-1t':'47 puntos corporales mapeados',
+    'diff-1t':'Análisis de proporciones con IA',
     'diff-1d':'Nuestra IA detecta hombros, busto, cintura, caderas, muslo y rodilla. Los competidores mapean máximo 12.',
     'diff-1tag':'Exclusivo VW',
     'diff-2t':'Cámara en vivo con guía AR',
@@ -2639,7 +2633,7 @@ var LANGS={
     'how-1t':'Toma o sube una foto',
     'how-1d':'Cámara en vivo con guía AR o importa desde galería.',
     'how-2t':'La IA mapea tu cuerpo',
-    'how-2d':'47 puntos detectados y proporciones calculadas en 3 segundos.',
+    'how-2d':'Proporciones corporales calculadas en segundos por la IA.',
     'how-3t':'Ve la caída real',
     'how-3d':'Prenda superpuesta con física de tela y pines de análisis.',
     'how-4t':'Compra con certeza',
@@ -2707,7 +2701,7 @@ var LANGS={
   fr:{
     'hero-lbl':'Cabine Intelligente','hero-h':'Voyez comment ça tombe','hero-em':'avant d\'acheter',
     'hero-sub':'La seule technologie qui analyse le tombé réel sur votre corps. Pas sur un mannequin générique.',
-    'ustrip-str':'Exclusif: 47 points corporels cartographiés','ustrip-sub':'Précision qu\'aucune autre app de mode n\'offre',
+    'ustrip-str':'Exclusif: Analyse des proportions corporelles IA','ustrip-sub':'Analyse personnalisée pour votre corps',
     'onb1':'Choisir la pièce','onb2':'Prendre photo','onb3':'Voir résultat',
     'slb1':'Pièce','slb2':'Photo','slb3':'Analyse','slb4':'Résultat',
     'sh-t':'① Choisir une pièce','cat-lbl':'pièces',
@@ -2729,7 +2723,7 @@ var LANGS={
     'as0t':'Détection du contour et des proportions',
     'as1t':'Cartographie épaules, buste, taille et hanches',
     'as2t':'Calcul du tombé idéal du vêtement',
-    'as3t':'Génération de superposition photoréaliste',
+    'as3t':'Génération du résultat personnalisé',
     'rc1':'Comparer les tailles','rc2':'Tombé personnalisé','rc3':'Composition & entretien',
     'sz-tag':'Votre taille idéale','fit-lbl':'✦ Analyse personnalisée',
     'hook-txt':'Ne vous trompez plus jamais de taille en achetant en ligne',
@@ -2767,7 +2761,7 @@ var LANGS={
     'how2t':'Nous calculons les proportions réelles',
     'how3t':'Nous croisons avec la pièce choisie',
     'how4t':'Vous recevez un résultat unique',
-    'how1d':' — l\'IA détecte 47 points sur votre corps: épaules, buste, taille, hanches, longueur du torse et des jambes.',
+    'how1d':' — l\'IA analyse vos proportions: buste, taille, hanches et hauteur pour calculer le tombé réel.',
     'how2d':' — pas des estimations. Nous mesurons pixel par pixel la distance entre chaque point corporel.',
     'how3d':' — chaque vêtement a une coupe spécifique. L\'IA calcule si la coupe embrasse ou contredit vos proportions.',
     'how4d':' — qui ne convient à personne d\'autre. Calculé exclusivement pour votre corps.',
@@ -2815,6 +2809,8 @@ var LANGS={
     'bio-prop':'PROPORTIONNÉ',
     'bio-athletic':'ATHLÉTIQUE',
     'sl-alt':'Hauteur',
+    'sl-pes':'Poids',
+    'sl-pes':'Poids',
     'sl-bu':'Buste',
     'sl-ci':'Taille',
     'sl-qu':'Hanches',
@@ -2824,12 +2820,12 @@ var LANGS={
     'disc-excl':'Technologie exclusive',
     'disc-h':'La mode qui',
     'disc-em':'s\'adapte à vous',
-    'disc-sub':'L\'IA cartographie 47 points de votre corps et montre comment chaque pièce tombe — avant tout achat.',
+    'disc-sub':'L\'IA analyse vos proportions corporelles et montre comment chaque pièce tombera — avant tout achat.',
     'dsl-1':'Moins de retours',
     'dsl-2':'Points cartographiés',
     'dsl-3':'Pour analyser',
     'disc-only':'Ce que seul Virtual Wardrobe possède',
-    'diff-1t':'47 points corporels cartographiés',
+    'diff-1t':'Analyse des proportions corporelles IA',
     'diff-1d':'Notre IA détecte épaules, buste, taille, hanches, cuisse et genou. Les concurrents cartographient au maximum 12.',
     'diff-1tag':'Exclusif VW',
     'diff-2t':'Caméra en direct avec guide AR',
@@ -2844,7 +2840,7 @@ var LANGS={
     'how-1t':'Prenez ou importez la photo',
     'how-1d':'Caméra en direct avec guide AR ou importez depuis galerie.',
     'how-2t':'L\'IA cartographie votre corps',
-    'how-2d':'47 points détectés et proportions calculées en 3 secondes.',
+    'how-2d':'Proportions corporelles calculées en secondes par l\'IA.',
     'how-3t':'Voyez le tombé réel',
     'how-3d':'Vêtement superposé avec physique du tissu et épingles d\'analyse.',
     'how-4t':'Achetez avec certitude',
@@ -2898,13 +2894,13 @@ var LANGS={
     'disc-excl':'Technologie exclusive',
     'disc-h':'La mode qui',
     'disc-em':'s\'adapte à vous',
-    'disc-sub':'L\'IA cartographie 47 points de votre corps et montre comment tombe chaque vêtement.',
+    'disc-sub':'L\'IA analyse vos proportions et montre comment tombe chaque vêtement.',
     'dsl-1':'Moins de retours',
     'dsl-2':'Points corporels',
     'dsl-3':'Pour analyser',
     'disc-only':'Ce que seul Virtual Wardrobe a',
     'disc-how':'Comment ça marche',
-    'diff-1t':'47 points corporels cartographiés',
+    'diff-1t':'Analyse des proportions corporelles IA',
     'diff-1d':'Notre IA détecte épaules, buste, taille, hanches, cuisse et genou. Les concurrents cartographient au maximum 12.',
     'diff-1tag':'Exclusif VW',
     'diff-2t':'Caméra live avec guide AR',
@@ -2918,7 +2914,7 @@ var LANGS={
     'how-1t':'Prenez ou importez une photo',
     'how-1d':'Caméra live avec guide AR ou importez depuis la galerie.',
     'how-2t':'L\'IA cartographie votre corps',
-    'how-2d':'47 points détectés et proportions calculées en 3 secondes.',
+    'how-2d':'Proportions corporelles calculées en secondes par l\'IA.',
     'how-3t':'Voyez le tombé réel',
     'how-3d':'Vêtement superposé avec physique du tissu et épingles d\'analyse.',
     'how-4t':'Achetez avec certitude',
@@ -3097,7 +3093,7 @@ function setLang(code,flag,label){
   s('amc-lbl-bu',L['amc-bu']);s('amc-lbl-ci',L['amc-ci']);s('amc-lbl-qu',L['amc-qu']);s('amc-lbl-alt',L['amc-alt']);
   // Slider labels
   s('sl-alt',L['sl-alt']);s('sl-bu',L['sl-bu']);s('sl-ci',L['sl-ci']);
-  s('sl-qu',L['sl-qu']);s('sl-om',L['sl-om']);s('sl-co',L['sl-co']);
+  s('sl-qu',L['sl-qu']);s('sl-om',L['sl-om']);s('sl-co',L['sl-co']);s('sl-pes',L['sl-pes']||'Peso');
   // Avatar empty placeholder
   s('av-empty-txt',L['av-empty-txt']);
   // Discover tab
@@ -3145,7 +3141,7 @@ function setLang(code,flag,label){
   amc_lc('amc-quadril-lbl','amc-quadril');amc_lc('amc-altura-lbl','amc-altura');
   // Slider labels
   s('sl-alt',L['sl-alt']);s('sl-bu',L['sl-bu']);s('sl-ci',L['sl-ci']);
-  s('sl-qu',L['sl-qu']);s('sl-om',L['sl-om']);s('sl-co',L['sl-co']);
+  s('sl-qu',L['sl-qu']);s('sl-om',L['sl-om']);s('sl-co',L['sl-co']);s('sl-pes',L['sl-pes']||'Peso');
   // Avatar empty placeholder
   s('av-empty-txt',L['av-empty-txt']);
   // Biotype badge
@@ -3357,7 +3353,7 @@ function selAG(id,el){
 function setGen(g,el){el.closest(".opills").querySelectorAll(".opill").forEach(o=>o.classList.remove("on"));el.classList.add("on");ST.gen=g;drawAv();}
 function setSk(c,el){document.querySelectorAll(".skd").forEach(d=>d.classList.remove("on"));el.classList.add("on");ST.sk=c;drawAv();}
 function setCol(c,el){document.querySelectorAll(".cdot").forEach(d=>d.classList.remove("on"));el.classList.add("on");ST.gc=c;drawAv();}
-function upM(k,v,u){const _el=document.getElementById("mv-"+k)||document.getElementById("mv-"+(k==="pes"?"pe":k));if(_el)_el.textContent=v+" "+u;ST.m[k]=parseFloat(v);}
+function upM(k,v,u){document.getElementById("mv-"+k).textContent=v+" "+u;ST.m[k]=parseFloat(v);}
 function setVw(v,el){document.querySelectorAll(".vt").forEach(p=>p.classList.remove("on"));el.classList.add("on");ST.vw=v;drawAv();}
 
 function drawAv(){
